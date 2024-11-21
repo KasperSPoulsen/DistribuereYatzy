@@ -1,0 +1,13 @@
+include includes/header.pug
+body
+    h1 Opret Bruger
+    label Brugernavn 
+        input(type='text', name='usernameText' id='usernameText')
+        button(type='button', name='addUserButton', id='addUserButton') Tilføj Bruger
+    h1 Liste Af Spillere 
+    ul(id= 'usernameList')
+        each user in users 
+            li= user
+    
+
+    
